@@ -34,10 +34,7 @@
   }
 
   &__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    inset: 50% auto auto 50%; // Not supported in Chrome
+    @include absCenter;
     transform: translate(-50%, 20%);
     color: $color-white;
     text-transform: uppercase;
@@ -51,7 +48,7 @@
 
   &:hover &__caption {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    @include absCenter;
   }
 
   &:hover &__img {

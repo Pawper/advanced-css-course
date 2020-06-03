@@ -125,11 +125,7 @@
 
   // FRONT SIDE STYLING
   &__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    inset: 50% auto auto 50%; // Not supported in Chrome
-    transform: translate(-50%, -50%);
+    @include absCenter;
     text-align: center;
   }
 

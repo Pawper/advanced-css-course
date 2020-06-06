@@ -9,6 +9,10 @@
   will-change: transform; // Fixes text jitter in transition
   backface-visibility: hidden; // Fixes text jitter in transition
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -17,6 +21,10 @@
     background-clip: text;
     -webkit-background-clip: text; //still required in Chrome as of 5/31/2020
     color: transparent;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
